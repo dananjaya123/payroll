@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="293.0" prefWidth="628.0" style="-fx-background-color: #78909c; -fx-background-radius: 20;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.payroll.controller.LevelAdd">
+   <effect>
+      <DropShadow />
+   </effect>
+   <children>
+      <JFXTextField fx:id="textPositionAdd" focusColor="WHITE" labelFloat="true" layoutX="37.0" layoutY="134.0" onAction="#textPositionAddOnActon" prefHeight="25.0" prefWidth="202.0" promptText="Position" unFocusColor="#fffbfb">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="textBasicSalaryAdd" focusColor="WHITE" labelFloat="true" layoutX="321.0" layoutY="134.0" onAction="#textBasicSalaryAddOnAction" prefHeight="25.0" prefWidth="202.0" promptText="Basic Salary" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="textMedicalFeeAdd" focusColor="WHITE" labelFloat="true" layoutX="37.0" layoutY="194.0" onAction="#textMedicalFeeAddOnacton" prefHeight="25.0" prefWidth="202.0" promptText="Medical Fee" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="156.0" layoutY="14.0" prefHeight="40.0" prefWidth="259.0" text="Add Level" textFill="#ffffff87">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAdd" layoutX="477.0" layoutY="240.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="92.0" style="-fx-background-color: #ff0a0a;" text="Add" textFill="WHITE" />
+      <JFXTextField fx:id="textLevel" focusColor="WHITE" labelFloat="true" layoutX="314.0" layoutY="194.0" onAction="#TextLevelOnAction" prefHeight="25.0" prefWidth="202.0" promptText="LevelID" unFocusColor="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnBack" layoutX="24.0" layoutY="22.0" onAction="#btnBackOnAction" prefHeight="17.0" prefWidth="46.0" style="-fx-background-color: #1565c0;" text="Back" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
+   </children>
+</AnchorPane>
